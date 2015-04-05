@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo with jQuery</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="description" content="Demo project with jQuery">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div class="media-block">
+      <h1 class="media-block__heading">Welcome</h1>
+      <p class="media-block__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <button class="media-block__btn color-primary">Learn More</button>
+    </div>
+
+  </body>
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script>
+    setTimeout(function () {
+      $('.media-block').addClass('active');
+    }, 100);
+    setTimeout(function () {
+      $('.media-block').addClass('active-1');
+    }, 900);
+    setTimeout(function () {
+      $('.media-block').addClass('active-2');
+    }, 1000);
+    setTimeout(function () {
+      $('.media-block').addClass('active-3');
+    }, 2000);
+  </script>
+</html>

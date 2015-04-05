@@ -1,0 +1,12 @@
+{
+  "name": "css-effects",
+  "version": "0.0.1",
+  "description": "css playground",
+  "main": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cameronjroe/css-playground.git"
+  },
+  "author": "Cameron J Roe <cameronjroe@gmail.com> (http://cameronjroe.com/)"
+}
