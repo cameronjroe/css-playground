@@ -1,4 +1,5 @@
 # css-playground
 
-- welcome
+### welcome
+
 A simple welcome intro animation.
