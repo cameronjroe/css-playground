@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "css playground",
   "main": "",
-  "scripts": {},
+  "scripts": {
+    "next": "cssnext --watch ./css4/css4.next.css ./css4/css4.css"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/cameronjroe/css-playground.git"

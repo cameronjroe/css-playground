@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css4.css">
+  </head>
+  <body style="padding: 4em;">
+    
+    <section class="container">
+      
+      <article class="features">
+        
+        <div class="features__intro">
+          <h1>CSS4 Features</h1>
+        </div>
+
+        <ul class="features__list">
+          <li class="features__list-item">
+            <h4 class="features__list-item-heading">Variables</h4>
+            <pre>
+              :root {
+                --main-color: #06c;
+                --accent-color: #006;
+              }
+              /* The rest of the CSS file */
+              #foo h1 {
+                color: var(--main-color);
+              }
+            </pre>
+          </li>
+          <li class="features__list-item">
+            <h4 class="features__list-item-heading">Custom media queries</h4>
+            <pre>
+              @custom-media --narrow-window (max-width: 30em);
+
+              @media (--narrow-window) {
+                /* narrow window styles */
+              }
+              @media (--narrow-window) and (script) {
+                /* special styles for when script is allowed */
+              }
+            </pre>
+          </li>
+          <li class="features__list-item">
+            <h4 class="features__list-item-heading">Custom selectors</h4>
+            <pre>
+              @custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+              :--heading { /* styles for all headings */ }
+              :--heading + p { /* more styles */ }
+            </pre>
+          </li>
+          <li class="features__list-item">
+            <h4 class="features__list-item-heading">Math</h4>
+            <pre>
+              p {
+                margin: calc(1rem - 2px) calc(1rem - 1px);
+              }
+            </pre>
+          </li>
+          <li class="features__list-item">
+            <h4 class="features__list-item-heading">Media queries ranges</h4>
+            <pre>
+              @custom-media --viewport-small (width >= 600px);
+            </pre>
+          </li>
+          <li class="features__list-item">
+            <h4 class="features__list-item-heading">Color manipulations</h4>
+            <pre>
+              color(X w(+ 20%) s(+ 20%))
+            </pre>
+          </li>
+        </ul>
+
+      </article>
+
+    </section>
+
+  </body>
+</html>
